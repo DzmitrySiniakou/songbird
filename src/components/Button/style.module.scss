@@ -1,0 +1,65 @@
+.button {
+  background: #222;
+  padding: 3px 3px 0px 3px;
+  transition: all 0.5s;
+  height: 80px;
+  opacity: 0.7;
+  border-radius: 5px;
+  border: solid 1px #444;
+  width: 250px;
+  font-size: 21px;
+  &:hover {
+    -webkit-animation: rainbow-color 5s infinite;
+    animation: rainbow-background 5s infinite;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  @media (max-width: 1100px) {
+    width: 250px;
+  }
+
+  @media (max-width: 900px) {
+    width: 150px;
+  }
+
+  @media (max-width: 600px) {
+    width: 320px;
+  }
+
+  @media (max-width: 400px) {
+    width: 250px;
+  }
+}
+
+.buttonIMG {
+  height: 15px;
+}
+
+.pressed {
+  background: black;
+  color: #424141;
+  opacity: 0.2;
+  &:hover {
+    -webkit-animation: rainbow-color 5s infinite;
+    animation: rainbow-background 5s infinite;
+    cursor: pointer;
+    opacity: 0.2;
+  }
+}
+
+
+@keyframes rainbow-color {
+ 0% {
+  color: white
+ }
+ 33.000% {
+  color: green
+ }
+ 66.00% {
+  color:red
+ }
+ 99.00% {
+  color:white
+ }
+}

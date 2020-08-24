@@ -1,0 +1,88 @@
+.li {
+  display: inline;
+  color: white;
+  background: #008000;
+  padding: 10px;
+  &:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  &:last-child {
+    border-radius:  0 5px 5px 0;
+  }
+
+  @media (max-width: 900px) {
+    &:nth-child(6) {
+      border-radius: 5px;
+    }
+    &:nth-child(5) {
+      border-radius:  0 5px 5px 0;
+    }
+  }
+
+  @media (max-width: 550px) {
+    &:nth-child(5) {
+      border-radius:  0 5px 5px 0;
+    }
+    &:nth-child(4) {
+      border-radius: 5px 0 0 5px;
+    }
+    &:nth-child(3) {
+      border-radius:  0 5px 5px 0;
+    }
+  }
+}
+
+.completeLi {
+  display: inline;
+  color: white;
+  background: #32CD32;
+  padding: 10px;
+  &:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  &:last-child {
+    border-radius:  0 5px 5px 0;
+  }
+  
+  @media (max-width: 550px) {
+    &:nth-child(6) {
+      border-radius: 5px;
+    }
+    &:nth-child(5) {
+      border-radius:  0 5px 5px 0;
+    }
+    &:nth-child(4) {
+      border-radius: 5px 0 0 5px;
+    }
+    &:nth-child(3) {
+      border-radius:  0 5px 5px 0;
+    }
+  }
+
+  @media (max-width: 900px) {
+    &:nth-child(6) {
+      border-radius: 5px;
+    }
+    &:nth-child(5) {
+      border-radius:  0 5px 5px 0;
+    }
+  }
+}
+
+.progressBar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  flex: auto;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+
+  @media (max-width: 900px) {
+    width: 500px;
+  }
+  @media (max-width: 550px) {
+    width: 300px;
+  }
+}

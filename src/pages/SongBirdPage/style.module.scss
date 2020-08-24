@@ -1,0 +1,25 @@
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.nextLevelButton {
+  width: 80%;
+  color: white;
+  background-color: green;
+}
+
+
+@media (min-width: 1100px) {
+  .nextLevelButton {
+    width: 833px;
+  }
+}

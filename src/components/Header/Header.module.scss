@@ -1,0 +1,32 @@
+.header {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #303030;
+  align-items: center;
+
+  .topPanel {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+
+    .logo {
+      margin-right: 40vw;
+      font-family: 'Dancing Script', cursive;
+      color: #ADFF2F;
+
+      @media (min-width: 900px) {
+        margin-right: 550px;
+      }
+    }
+
+    .score {
+      font-weight: 500;
+      color: white;
+      font-size: 20px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+}

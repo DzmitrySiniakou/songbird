@@ -1,0 +1,22 @@
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 25px 25px 0;
+
+  .answerVariantTrue {
+    color: green,;
+  }
+
+  .answerVariantFalse {
+    color: red,;
+  }
+
+  .answerVariant {
+    color: white;
+  }
+
+  @media (max-width: 600px) {
+    padding: 25px 0;
+  }
+}
